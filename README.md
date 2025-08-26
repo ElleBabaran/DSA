@@ -1,2 +1,2 @@
 # DSA
-practice coding different algorithms
+practice coding with different algorithms
