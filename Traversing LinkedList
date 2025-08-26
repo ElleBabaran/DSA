@@ -1,0 +1,32 @@
+
+#Output: 2 -> 3 -> 4
+
+class LinkedList {
+    public static void main(String[] args) {
+        Node first= new Node(2);
+        Node second= new Node(3);
+        Node third= new Node(4);
+        
+        first.next=second;
+        second.next=third;
+        third.next=null;
+        
+        
+        Node current= first;
+            while(current!= null){
+                System.out.print(current.numbers + " -> ");
+                current=current.next;
+        }
+        
+    }
+}
+
+class Node{
+    int numbers;
+    Node next;
+    
+    Node(int numbers) {
+        this.numbers=numbers;
+        this.next= null;
+    }
+}
