@@ -1,0 +1,33 @@
+
+#Output: Caroline, Bob, Shion
+
+class LinkedList{
+    public static void main(String[] args) {
+        
+        Node head= new Node("Caroline");
+        Node middle= new Node("Bob");
+        Node last= new Node("Shion");
+        
+        head.next=middle;
+        middle.next=last;
+        
+        Node starter= head;
+         while(starter!= null){
+             System.out.print(starter.names);
+             if(starter.next != null){
+                 System.out.print(", ");
+             }
+             starter= starter.next;
+         }
+    }
+}
+
+class Node{
+    String names;
+    Node next;
+    
+    Node(String names){
+        this.names=names;
+        this.next=next;
+    }
+}
